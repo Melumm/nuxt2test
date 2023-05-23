@@ -21,20 +21,7 @@ export default {
         email: ''
     }),
     methods: {
-        async signOut() {
-            /* signOut deletes the user's session */
-            await this.$supabase.auth.signOut()
-            this.profile = null
-        },
-        async signIn() {
-            /* signIn sends the user a magic link */
-            const { email } = this
-            if (!email) return
-            const { error, data } = await this.$supabase.auth.signIn({
-                email
-            })
-            this.submitted = true
-        },
+        
     },
     async mounted() {
         /* when the component loads, fetch the user's profile */
