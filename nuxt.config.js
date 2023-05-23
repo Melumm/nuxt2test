@@ -42,4 +42,10 @@ export default {
     { src: "~plugins/client.js" },
     { src: "~plugins/simplemde.js", mode: "client" },
   ],
+
+
+  
 };
+
+
+
