@@ -3,10 +3,10 @@
     <nav class="p-6 border-b border-gray-300">
       <NuxtLink to="/" class="mr-6"> Home </NuxtLink>
       <NuxtLink to="/profile" class="mr-6"> Profile </NuxtLink>
-      <NuxtLink to="/create-post" class="mr-6" v-if="authenticated">
+      <NuxtLink to="/create-post" class="mr-6" >
         Create post
       </NuxtLink>
-      <NuxtLink to="/my-posts" class="mr-6" v-if="authenticated">
+      <NuxtLink to="/my-posts" class="mr-6" >
         My Posts
       </NuxtLink>
     </nav>
